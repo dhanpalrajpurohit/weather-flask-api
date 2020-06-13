@@ -2,7 +2,7 @@
 Clone the weather API with help of **Python-Flask**.
 
 ## Motivation
-A short motivation behind this project is that to learn new concepts.
+A short motivation behind this project is that to learn new concepts.if learn something from this project then give a **star**.
 
 ## Build status
 Build status of continus integration. 
@@ -16,8 +16,7 @@ Framework : **Flask**
 Frontend : **HTML,Bootstrap4**
 
 ## Screenshots
-Include logo/demo screenshot etc.
-
+![alt text](https://github.com/dhanpalrajpurohit/weather-flask-api/blob/master/static/demo.png)
 
 # API Reference
 https://openweathermap.org/
@@ -25,4 +24,4 @@ https://openweathermap.org/
 
 # How to use?
 run the following command
-```python3 checkweather.py```
+```python3 checkWeather.py```
