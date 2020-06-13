@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>What's the weather like?</title>
+</head>
+<body>
+<div class="container-fluid">
+<nav class="navbar navbar-dark bg-dark h-100">
+  <a class="navbar-brand mx-auto"><strong>CheckWeather.com</strong></a>
+</nav>
+  
+
+
+
+
+{% if show%}
+<div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading">Invalid City Name!</h4>
+  <p>Error, you entered the incorrrect city name.Kindly, Check Entered City Name</p>
+  <hr>
+  <p class="mb-0">Exmple London,Paris,Surat,Mumbai and so.</p>
+</div>
+{% endif %}
+
+
+
+
+<form method="post">
+<div class="input-group input-group-lg m-2 w-25 mx-auto">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Enter City </span>
+  </div>
+  <input type="text" class="form-control" name="city" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="submit" id="button-addon2" value="Submit">Submit</button>
+  </div>
+</div>
+</form>
+
+
+{% for data in weather_data %}
+<div class="card mb-3 mx-auto" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://openweathermap.org/img/w/{{ data.icon }}.png" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{data.city}}</h5>
+        <p class="card-text">{{data.temp}}F</p>
+        <p class="card-text">{{data.desc}}</p>
+        <p class="card-text"><small class="text-muted">Max Temperature:{{data.max_temp}}  </small></p>
+        <p class="card-text"><small class="text-muted">Min Temperature:{{data.min_temp}}  </small></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor%}
+</div>
+
+
+
+
+
+<link rel="stylesheet" src="{{ url_for('static', filename='jquery.min.js') }}">
+<link rel="stylesheet" src="{{ url_for('static', filename='popper.min.js') }}">
+<link rel="stylesheet" src="{{ url_for('static', filename='bootstrap.min.js') }}">
+</body>
+
+</html>
+
