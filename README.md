@@ -1,4 +1,4 @@
-# flask-api
+# Flask-API
 Clone API with help of **Python-Flask**.
 
 ## Motivation
@@ -11,19 +11,19 @@ Build status of continus integration.
 
 
 ## Tech/framework
-Programming Langugage : **Python**
-Framework : **Flask**
-Frontend : **HTML,Bootstrap4**
+Programming Langugage : **Python** </br>
+Framework : **Flask**  </br>
+Frontend : **HTML,Bootstrap4**  </br>
 
 ## Screenshots
 ![alt text](https://github.com/dhanpalrajpurohit/weather-flask-api/blob/master/static/demo.png)
 
 # API Reference
-https://openweathermap.org/
+https://openweathermap.org/ </br>
 https://newsapi.org/
 
 
 # How to use?
-run the following command
-```python3 checkWeather.py```
+run the following command </br>
+```python3 checkWeather.py```  </br>
 ```python3 checkNews.py```
