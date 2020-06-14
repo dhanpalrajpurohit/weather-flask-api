@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark h-100">
+        <a class="navbar-brand mx-auto"><strong>ToDayNews</strong></a>
+</nav>
+              
+<div class="container pl-5">
+    {% for news in newsDatas %}
+    <div class="card mb-3 mx-auto pl-5 pr-5">
+            <img class="card-img-top w-100 img-thumbnail mx-auto" src="{{news.urlToImage}}" alt="Card image cap" >
+            <div class="card-body">
+                <h4 class="card-title"><strong>{{news.title}}</strong></h4>
+                <p class="card-text">{{news.description}}</p>
+                <p class="card-text"><small class="text-muted">{{news.publishedAt}}</small></p>
+                <a href="{{news.url}}">Show more</a>
+            </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<link rel="stylesheet" src="{{ url_for('static', filename='jquery.min.js') }}">
+<link rel="stylesheet" src="{{ url_for('static', filename='popper.min.js') }}">
+<link rel="stylesheet" src="{{ url_for('static', filename='bootstrap.min.js') }}">
+</body>
+</html>
