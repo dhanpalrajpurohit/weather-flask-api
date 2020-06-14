@@ -1,5 +1,5 @@
-# weather-flask-api
-Clone the weather API with help of **Python-Flask**.
+# flask-api
+Clone API with help of **Python-Flask**.
 
 ## Motivation
 A short motivation behind this project is that to learn new concepts.if learn something from this project then give a **star**.
@@ -20,8 +20,10 @@ Frontend : **HTML,Bootstrap4**
 
 # API Reference
 https://openweathermap.org/
+https://newsapi.org/
 
 
 # How to use?
 run the following command
 ```python3 checkWeather.py```
+```python3 checkNews.py```
