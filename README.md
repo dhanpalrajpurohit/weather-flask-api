@@ -2,7 +2,7 @@
 Clone API with help of **Python-Flask**.
 
 ## Motivation
-A short motivation behind this project is that to learn new concepts.if learn something from this project then give a **star**.
+A short motivation behind this project is that to learn new concepts.if you learn something from this project then give a **star**.
 
 ## Build status
 Build status of continus integration. 
