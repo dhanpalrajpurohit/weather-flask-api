@@ -11,19 +11,30 @@ Build status of continus integration.
 
 
 ## Tech/framework
-Programming Langugage : **Python** </br>
-Framework : **Flask**  </br>
-Frontend : **HTML,Bootstrap4**  </br>
+Programming Langugage : **Python** <br>
+Framework : **Flask**  <br>
+Frontend : **HTML,Bootstrap4**  <br>
 
 ## Screenshots
-![alt text](https://github.com/dhanpalrajpurohit/weather-flask-api/blob/master/static/demo.png)
+### News API
+![alt text](pictures/news.png)
+
+### Weather API
+![alt text](pictures/weather.png)
+
 
 # API Reference
-https://openweathermap.org/ </br>
+https://openweathermap.org/ <br>
 https://newsapi.org/
 
 
 # How to use?
-run the following command </br>
-```python3 checkWeather.py```  </br>
+run the following command <br>
+```python3 checkWeather.py```  <br>
 ```python3 checkNews.py```
+
+
+## Author 
+## Dhanpal Singh Rajpurohit
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
