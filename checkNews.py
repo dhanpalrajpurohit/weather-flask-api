@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST','GET'])
 def checkNews():
-    url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=4dbc17e007ab436fb66416009dfb59a8"
+    url = "YOUR_API_KEY"
     data = requests.get(url).json()
     newsDatas = data["articles"]
     return render_template("checkNews.html",newsDatas=newsDatas)

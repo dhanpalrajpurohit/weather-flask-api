@@ -12,7 +12,7 @@ def weather():
     if request.method == 'POST':
         city = request.form['city']
 
-        source = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=ad06dc44bcfc93c5f3d1f48479679a37'
+        source = 'Your_API_KEY'
         list_of_data = requests.get(source).json()
         weather_data = []
         show=False
